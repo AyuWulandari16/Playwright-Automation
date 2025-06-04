@@ -13,6 +13,17 @@
 
 ---
 
+## 📁 Struktur Proyek
+
+project-root/
+├── tests/
+│ └── slides.spec.ts # File utama yang berisi semua test case
+├── playwright.config.ts # Konfigurasi Playwright
+├── package.json # Konfigurasi dependensi
+└── README.md # Dokumentasi proyek ini
+
+---
+
 ## 🛠️ Technologies Used
 
 - **Playwright** – A modern browser automation framework supporting Chromium, Firefox, and WebKit.
