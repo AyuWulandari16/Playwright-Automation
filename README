@@ -1,0 +1,60 @@
+# 📘 Playwright Automation for 24Slides - Login & Download Feature
+
+**This project uses Playwright to automate testing of the login and download features on the 24Slides website.** The tests are written in **TypeScript** and run automatically on the **Chromium** browser with a simulated **Chrome user-agent** to ensure Chrome is used and reduce the chance of CAPTCHA.
+
+---
+
+## 🚀 Key Features
+
+- 🔐 **Automated Login Tests**: Covers login tests with valid, invalid, empty emails, and authentication via Google and LinkedIn.
+- 📥 **Download Simulation**: Tests to ensure the download feature works properly.
+- 🛠️ **User-Agent Spoofing**: Ensures tests run on the desired browser by spoofing the Chrome user-agent.
+- 🐞 **Debugging Support**: Use `await page.pause()` for interactive debugging during tests.
+
+---
+
+## 🛠️ Technologies Used
+
+- **Playwright** – A modern browser automation framework supporting Chromium, Firefox, and WebKit.
+- **TypeScript** – The programming language used to write the test scripts.
+- **Chromium** – The main browser used for testing.
+- **Node.js** – JavaScript runtime environment needed to run Playwright.
+- **VS Code** – Recommended code editor for development and debugging.
+
+---
+
+## 🚀 How to Run Tests
+
+### 1. Install Dependencies
+
+Make sure **Node.js** is installed, then run:
+
+```bash
+npm install
+```
+
+### 2. Run Test
+
+- **Jalankan semua test secara default:**
+
+```bash
+npx playwright test
+```
+
+- **Jalankan test dengan UI interaktif Playwright:**
+
+```bash
+npx playwright test --ui
+```
+
+- **Jalankan test dengan mode browser terbuka (headed):**
+
+```bash
+npx playwright test --headed
+```
+
+- **Jalankan test tertentu pada project Chromium dengan mode headed:**
+
+```bash
+npx playwright test ./tests/slides.spec.ts --project=chromium --headed
+```
