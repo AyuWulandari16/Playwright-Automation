@@ -31,30 +31,5 @@ Make sure **Node.js** is installed, then run:
 
 ```bash
 npm install
-```
 
-### 2. Run Test
-
-- **Jalankan semua test secara default:**
-
-```bash
-npx playwright test
-```
-
-- **Jalankan test dengan UI interaktif Playwright:**
-
-```bash
-npx playwright test --ui
-```
-
-- **Jalankan test dengan mode browser terbuka (headed):**
-
-```bash
-npx playwright test --headed
-```
-
-- **Jalankan test tertentu pada project Chromium dengan mode headed:**
-
-```bash
-npx playwright test ./tests/slides.spec.ts --project=chromium --headed
 ```
