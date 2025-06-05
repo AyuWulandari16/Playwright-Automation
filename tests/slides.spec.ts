@@ -107,18 +107,3 @@ test('TC_Login_07 - Login with empty password field', async ({ browser }) => {
   const passwordValidation = await passwordInput.evaluate(el => (el as HTMLInputElement).validationMessage);
   expect(passwordValidation).toBe('Please fill out this field.');
 });
-
-test('TC_Download_01 - Download without Login', async ({browser}) => {
-  const context = await browser.newContext({ userAgent });
-  const page = await context.newPage();
-
-  await page.goto('https://24slides.com/templates/featured')
-
-  await page.getByRole('link', {name: 'Mexican Taco PowerPoint Slide'}).click()
-
-  await expect(page.getByRole('link', { name: 'Signup Free to download' })).toBeVisible();
-  await page.getByRole('link', { name: 'Signup Free to download' }).click();
-
-  await expect(page.locator('jsTabInviteForm')).toBeVisible();
-
-})

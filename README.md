@@ -7,7 +7,7 @@
 ## 🚀 Key Features
 
 - 🔐 **Automated Login Tests**: Covers login tests with valid, invalid, empty emails, and authentication via Google and LinkedIn.
-- 📥 **Download Simulation**: Tests to ensure the download feature works properly.
+- 📥 **Automated Download Template**: Tests to ensure the download feature works properly.
 - 🛠️ **User-Agent Spoofing**: Ensures tests run on the desired browser by spoofing the Chrome user-agent.
 - 🐞 **Debugging Support**: Use `await page.pause()` for interactive debugging during tests.
 
@@ -20,6 +20,12 @@
 - **Chromium** – The main browser used for testing.
 - **Node.js** – JavaScript runtime environment needed to run Playwright.
 - **VS Code** – Recommended code editor for development and debugging.
+
+---
+
+## 📌 Catatan Tambahan
+
+**Beberapa interaksi seperti CAPTCHA tidak bisa diotomatisasi karena bersifat proteksi terhadap bot.**
 
 ---
 
@@ -36,25 +42,25 @@ npm install
 
 ### 2. Run Test
 
-- **Jalankan semua test secara default:**
+- **Run all tests with default settings:**
 
 ```bash
 npx playwright test
 ```
 
-- **Jalankan test dengan UI interaktif Playwright:**
+- **Run tests with Playwright's interactive UI:**
 
 ```bash
 npx playwright test --ui
 ```
 
-- **Jalankan test dengan mode browser terbuka (headed):**
+- **Run tests with the browser in headed mode (visible browser):**
 
 ```bash
 npx playwright test --headed
 ```
 
-- **Jalankan test tertentu pada project Chromium dengan mode headed:**
+- **Run a specific test file on the Chromium project in headed mode:**
 
 ```bash
 npx playwright test ./tests/slides.spec.ts --project=chromium --headed
