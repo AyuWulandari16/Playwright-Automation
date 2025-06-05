@@ -38,7 +38,7 @@ test.describe('Automation testing download template 24Slides', () => {
     await page.getByRole('link', { name: 'FREE Mexican Food Powerpoint Template PowerPoint Template' }).click();
     await page.getByRole('button', { name: 'Download' }).click();
 
-    await expect(page.getByText('Your download will begin shortly')).toBeVisible();
+    await expect(page.getByText('Your template is now downloading')).toBeVisible();
   });
 
   test('TC_Download_03 - Download Google Slides template after successful login', async ({ browser }) => {
@@ -50,7 +50,7 @@ test.describe('Automation testing download template 24Slides', () => {
     await page.getByRole('link', { name: 'FREE Google Slides Calendar Icons PowerPoint Template' }).click();
     await page.getByRole('button', { name: 'Download' }).click();
 
-    await expect(page.getByText('Your download will begin shortly')).toBeVisible();
+    await expect(page.getByText('Your template is now downloading')).toBeVisible();
   });
 
   test('TC_Download_04 - Download from header "Featured" section', async ({ browser }) => {
@@ -62,7 +62,7 @@ test.describe('Automation testing download template 24Slides', () => {
     await page.getByRole('link', { name: 'FREE AI Business Powerpoint Slide PowerPoint Template' }).click();
     await page.getByRole('button', { name: 'Download' }).click();
 
-    await expect(page.getByText('Your download will begin shortly')).toBeVisible();
+    await expect(page.getByText('Your template is now downloading')).toBeVisible();
   });
 
   test('TC_Download_05 - Download from sidebar "Featured" section', async ({ browser }) => {
@@ -74,7 +74,7 @@ test.describe('Automation testing download template 24Slides', () => {
     await page.getByRole('link', { name: 'FREE Mexican Food Powerpoint Template PowerPoint Template' }).click();
     await page.getByRole('button', { name: 'Download' }).click();
 
-    await expect(page.getByText('Your download will begin shortly')).toBeVisible();
+    await expect(page.getByText('Your template is now downloading')).toBeVisible();
   });
 
   test('TC_Download_06 - Download template using valid keyword search', async ({ browser }) => {
@@ -89,7 +89,7 @@ test.describe('Automation testing download template 24Slides', () => {
     await result.click();
     await page.getByRole('button', { name: 'Download' }).click();
 
-    await expect(page.getByText('Your download will begin shortly')).toBeVisible();
+    await expect(page.getByText('Your template is now downloading')).toBeVisible();
   });
 
   test('TC_Download_07 - Search template using invalid keyword', async ({ browser }) => {
